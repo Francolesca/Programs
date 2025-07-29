@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "JISVkNzcxPA=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\franc\\Escritorio\\Programs\\src\\Starbucks.api\\Starbucks.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\franc\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.1\\microsoft.aspnetcore.openapi.9.0.1.nupkg.sha512",
+    "C:\\Users\\franc\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}

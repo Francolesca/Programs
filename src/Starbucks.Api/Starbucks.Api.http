@@ -1,0 +1,6 @@
+@Starbucks.Api_HostAddress = http://localhost:5192
+
+GET {{Starbucks.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
