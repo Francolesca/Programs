@@ -33,6 +33,42 @@
             "related": ".pdb;.xml"
           }
         }
+      },
+      "Starbucks.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Starbucks.Persistence": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Starbucks.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Starbucks.Application.dll": {}
+        }
+      },
+      "Starbucks.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Starbucks.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Starbucks.Domain.dll": {}
+        }
+      },
+      "Starbucks.Persistence/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Starbucks.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Starbucks.Persistence.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Starbucks.Persistence.dll": {}
+        }
       }
     }
   },
@@ -67,11 +103,27 @@
         "microsoft.openapi.1.6.17.nupkg.sha512",
         "microsoft.openapi.nuspec"
       ]
+    },
+    "Starbucks.Application/1.0.0": {
+      "type": "project",
+      "path": "../Starbucks.Application/Starbucks.Application.csproj",
+      "msbuildProject": "../Starbucks.Application/Starbucks.Application.csproj"
+    },
+    "Starbucks.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Starbucks.Domain/Starbucks.Domain.csproj",
+      "msbuildProject": "../Starbucks.Domain/Starbucks.Domain.csproj"
+    },
+    "Starbucks.Persistence/1.0.0": {
+      "type": "project",
+      "path": "../Starbucks.Persistence/Starbucks.Persistence.csproj",
+      "msbuildProject": "../Starbucks.Persistence/Starbucks.Persistence.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "Microsoft.AspNetCore.OpenApi >= 9.0.1"
+      "Microsoft.AspNetCore.OpenApi >= 9.0.1",
+      "Starbucks.Application >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -81,11 +133,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\franc\\Escritorio\\Programs\\src\\Starbucks.api\\Starbucks.Api.csproj",
+      "projectUniqueName": "C:\\Users\\franc\\Escritorio\\Programs\\src\\Starbucks.Api\\Starbucks.Api.csproj",
       "projectName": "Starbucks.Api",
-      "projectPath": "C:\\Users\\franc\\Escritorio\\Programs\\src\\Starbucks.api\\Starbucks.Api.csproj",
+      "projectPath": "C:\\Users\\franc\\Escritorio\\Programs\\src\\Starbucks.Api\\Starbucks.Api.csproj",
       "packagesPath": "C:\\Users\\franc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\franc\\Escritorio\\Programs\\src\\Starbucks.api\\obj\\",
+      "outputPath": "C:\\Users\\franc\\Escritorio\\Programs\\src\\Starbucks.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -105,7 +157,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\franc\\Escritorio\\Programs\\src\\Starbucks.Application\\Starbucks.Application.csproj": {
+              "projectPath": "C:\\Users\\franc\\Escritorio\\Programs\\src\\Starbucks.Application\\Starbucks.Application.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {}
+    "net9.0": {
+      "Starbucks.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Starbucks.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Starbucks.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Starbucks.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Starbucks.Domain/Starbucks.Domain.csproj",
+      "msbuildProject": "../Starbucks.Domain/Starbucks.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net9.0": []
+    "net9.0": [
+      "Starbucks.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\franc\\.nuget\\packages\\": {},
@@ -38,7 +57,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\franc\\Escritorio\\Programs\\src\\Starbucks.Domain\\Starbucks.Domain.csproj": {
+              "projectPath": "C:\\Users\\franc\\Escritorio\\Programs\\src\\Starbucks.Domain\\Starbucks.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

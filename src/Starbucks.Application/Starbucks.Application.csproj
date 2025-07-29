@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Starbucks.Persistence\Starbucks.Persistence.csproj" />
+  </ItemGroup>
+
 </Project>
