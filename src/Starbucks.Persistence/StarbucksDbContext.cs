@@ -38,5 +38,14 @@ public class StarbucksDbContext : DbContext
                     j.HasKey(t => new { t.CoffeId, t.IngredientId });
                 }
             );
+        modelBuilder.Entity<Category>()
+            .HasData(GetCategories());
     }
+
+    private IEnumerable<Category> GetCategories()
+    {
+        return Enum.GetValues<CategoryEnum>()
+            .Select(p => Category.Create((int)p));
+    }
+
 }
