@@ -4,7 +4,7 @@ using Starbucks.Domain;
 
 namespace Starbucks.Persistence;
 
-public class StarbucksDbContext : DbContext
+public class StarbucksDbContext(DbContextOptions options) : DbContext(options)
 {
     public required DbSet<Category> Categories { get; set; }
     public required DbSet<Coffe> Coffes { get; set; }
