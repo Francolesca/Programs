@@ -11,8 +11,8 @@ using Starbucks.Persistence;
 namespace Starbucks.Persistence.Migrations
 {
     [DbContext(typeof(StarbucksDbContext))]
-    [Migration("20250730001814_InitialMigrations")]
-    partial class InitialMigrations
+    [Migration("20250730160407_InitialMigration")]
+    partial class InitialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

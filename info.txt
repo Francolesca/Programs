@@ -1,0 +1,2 @@
+$ dotnet ef database drop -p src/Starbucks.Persistence -s src/Starbucks.Api // Eliminar base de datos
+$ dotnet ef migrations add InitialMigration --project src/Starbucks.Persistence -o Migrations -s src/Starbucks.Api --verbose// Crear Migration

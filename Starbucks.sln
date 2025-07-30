@@ -13,13 +13,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starbucks.Domain", "src\Sta
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starbucks.Persistence", "src\Starbucks.Persistence\Starbucks.Persistence.csproj", "{C3B63B5D-EC48-4705-BB93-24D3A7203C10}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extensions", "Extensions", "{BE133D91-034E-1084-498B-FF24C4084A55}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A1F5298C-FFC7-43BA-A3AA-0138ACD0A0A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -38,6 +37,9 @@ Global
 		{C3B63B5D-EC48-4705-BB93-24D3A7203C10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3B63B5D-EC48-4705-BB93-24D3A7203C10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3B63B5D-EC48-4705-BB93-24D3A7203C10}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A1F5298C-FFC7-43BA-A3AA-0138ACD0A0A3} = {37215BE1-58FC-4441-A65A-B5256F083EBC}
