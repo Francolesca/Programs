@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Black Coffee",
+        "description": "mi cafe negro",
+        "ingredients": [
+            "Coffee"
+        ],
+        "image": "https://misimagenes.com/22122",
+        "id": 1,
+        "category": 1
+    },
+        {
+        "title": "Ice Coffee",
+        "description": "mi cafe helado",
+        "ingredients": [
+            "Coffee"
+        ],
+        "image": "https://misimagenes.com/22123",
+        "id": 2,
+        "category": 2
+    }
+]
