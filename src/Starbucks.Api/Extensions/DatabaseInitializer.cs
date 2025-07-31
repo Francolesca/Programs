@@ -53,17 +53,47 @@ public static class DatabaseInitializer
         var data = JsonConvert.DeserializeObject<List<CoffeJson>>(coffeDataText)
             ?? Enumerable.Empty<CoffeJson>();
 
-        var coffes = data.Select(json => new Coffe
+        var ingredientMaster = new List<Ingredient>();
+        var coffeMaster = new List<Coffe>();
+        var random = new Random();
+        foreach (var coffeJson in data)
         {
-            Id = json.CoffeId,
-            Name = json.Title!,
-            Description = json.Description,
-            Price = 10,
-            CategoryId = json.Category,
-            Imagen = json.Image,
-        }).ToArray();
-
-        await context.Coffes.AddRangeAsync(coffes);
+            var ingredientsLocal = new List<Ingredient>();
+            foreach (var i in coffeJson.Ingredients)
+            {
+                var ingredient = ingredientMaster
+                    .Where(s => string.Equals(
+                        s.Name, i, StringComparison.CurrentCultureIgnoreCase)
+                        ).FirstOrDefault();
+                if (ingredient is null)
+                {
+                    ingredient = new Ingredient
+                    {
+                        Id = Guid.NewGuid(),
+                        Name = i
+                    };
+                    ingredientMaster.Add(ingredient);
+                }
+                ingredientsLocal.Add(ingredient);
+            }
+            var coffe = new Coffe
+            {
+                Name = coffeJson.Title!,
+                Description = coffeJson.Description,
+                CategoryId = coffeJson.Category,
+                Imagen = coffeJson.Image,
+                Price = RandomPrice(random, 2, 15),
+                Ingredients = ingredientsLocal
+            };
+            coffeMaster.Add(coffe);
+        }
+        await context.Ingredients.AddRangeAsync(ingredientMaster);
+        await context.Coffes.AddRangeAsync(coffeMaster);
         await context.SaveChangesAsync();
+    }
+
+    private static decimal RandomPrice(Random random, double min, double max)
+    {
+        return Convert.ToDecimal(Math.Round( random.NextDouble() * Math.Abs(max - min) + min, 2));
     }
 }
