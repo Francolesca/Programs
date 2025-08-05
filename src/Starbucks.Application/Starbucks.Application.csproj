@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\core\Core.mediatOR\Core.mediatOR.csproj" />
     <ProjectReference Include="..\Starbucks.Persistence\Starbucks.Persistence.csproj" />
   </ItemGroup>
 

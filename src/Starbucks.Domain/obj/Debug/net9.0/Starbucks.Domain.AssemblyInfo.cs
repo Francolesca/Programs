@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Starbucks.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+64ada59266b80e1f58b55b0f23d041f95650453d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+651ddf88954a1d1956565b0b074a36f4af765734")]
 [assembly: System.Reflection.AssemblyProductAttribute("Starbucks.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Starbucks.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
