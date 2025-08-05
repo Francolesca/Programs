@@ -10,3 +10,4 @@ C:\Users\franc\Escritorio\Programs\core\Core.mediatOR\obj\Debug\net9.0\Core.medi
 C:\Users\franc\Escritorio\Programs\core\Core.mediatOR\obj\Debug\net9.0\refint\Core.mediatOR.dll
 C:\Users\franc\Escritorio\Programs\core\Core.mediatOR\obj\Debug\net9.0\Core.mediatOR.pdb
 C:\Users\franc\Escritorio\Programs\core\Core.mediatOR\obj\Debug\net9.0\ref\Core.mediatOR.dll
+C:\Users\franc\Escritorio\Programs\core\Core.mediatOR\obj\Debug\net9.0\Core.mediatOR.csproj.AssemblyReference.cache
