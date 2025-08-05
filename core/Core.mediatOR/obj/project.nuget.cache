@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "6YnVoIGXAUQ=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\franc\\Escritorio\\Programs\\core\\Core.mediatOR\\Core.mediatOR.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\franc\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.4\\microsoft.extensions.dependencyinjection.9.0.4.nupkg.sha512",
+    "C:\\Users\\franc\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.4\\microsoft.extensions.dependencyinjection.abstractions.9.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}

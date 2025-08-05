@@ -18,8 +18,4 @@
     <ProjectReference Include="..\Starbucks.Application\Starbucks.Application.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
 </Project>
