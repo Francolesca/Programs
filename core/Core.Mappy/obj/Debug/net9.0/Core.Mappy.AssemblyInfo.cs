@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Core.Mappy")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+800b2d019ee8018867e1f8cf6315a4364ed41c14")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01f2bda44cca660c7eb62dde8ffc7010b987f982")]
 [assembly: System.Reflection.AssemblyProductAttribute("Core.Mappy")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Core.Mappy")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
