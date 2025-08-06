@@ -4,3 +4,4 @@ $ dotnet run --project src/Starbucks.Api //Run project
 dotnet new classlib -o core/Core.mediatOR // Crear proyecto de Mediator
 dotnet sln add core/Core.mediatOR // Agregar proyecto a la solución
 $ dotnet add package Scrutor --version 6.0.1
+$ dotnet new classlib -o core/Core.Mappy // crear proyecto mapping 
