@@ -18,3 +18,5 @@ C:\Users\franc\Escritorio\Programs\src\Starbucks.Application\obj\Debug\net9.0\St
 C:\Users\franc\Escritorio\Programs\src\Starbucks.Application\obj\Debug\net9.0\ref\Starbucks.Application.dll
 C:\Users\franc\Escritorio\Programs\src\Starbucks.Application\bin\Debug\net9.0\Core.mediatOR.dll
 C:\Users\franc\Escritorio\Programs\src\Starbucks.Application\bin\Debug\net9.0\Core.mediatOR.pdb
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Application\bin\Debug\net9.0\Core.Mappy.dll
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Application\bin\Debug\net9.0\Core.Mappy.pdb

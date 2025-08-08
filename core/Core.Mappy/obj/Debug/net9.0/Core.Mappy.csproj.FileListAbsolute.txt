@@ -1,12 +1,12 @@
+C:\Users\franc\Escritorio\Programs\core\Core.Mappy\bin\Debug\net9.0\Core.Mappy.deps.json
+C:\Users\franc\Escritorio\Programs\core\Core.Mappy\bin\Debug\net9.0\Core.Mappy.dll
+C:\Users\franc\Escritorio\Programs\core\Core.Mappy\bin\Debug\net9.0\Core.Mappy.pdb
 C:\Users\franc\Escritorio\Programs\core\Core.Mappy\obj\Debug\net9.0\Core.Mappy.csproj.AssemblyReference.cache
 C:\Users\franc\Escritorio\Programs\core\Core.Mappy\obj\Debug\net9.0\Core.Mappy.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\franc\Escritorio\Programs\core\Core.Mappy\obj\Debug\net9.0\Core.Mappy.AssemblyInfoInputs.cache
 C:\Users\franc\Escritorio\Programs\core\Core.Mappy\obj\Debug\net9.0\Core.Mappy.AssemblyInfo.cs
 C:\Users\franc\Escritorio\Programs\core\Core.Mappy\obj\Debug\net9.0\Core.Mappy.csproj.CoreCompileInputs.cache
 C:\Users\franc\Escritorio\Programs\core\Core.Mappy\obj\Debug\net9.0\Core.Mappy.sourcelink.json
-C:\Users\franc\Escritorio\Programs\core\Core.Mappy\bin\Debug\net9.0\Core.Mappy.deps.json
-C:\Users\franc\Escritorio\Programs\core\Core.Mappy\bin\Debug\net9.0\Core.Mappy.dll
-C:\Users\franc\Escritorio\Programs\core\Core.Mappy\bin\Debug\net9.0\Core.Mappy.pdb
 C:\Users\franc\Escritorio\Programs\core\Core.Mappy\obj\Debug\net9.0\Core.Mappy.dll
 C:\Users\franc\Escritorio\Programs\core\Core.Mappy\obj\Debug\net9.0\refint\Core.Mappy.dll
 C:\Users\franc\Escritorio\Programs\core\Core.Mappy\obj\Debug\net9.0\Core.Mappy.pdb

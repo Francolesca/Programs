@@ -168,3 +168,7 @@ C:\Users\franc\Escritorio\Programs\src\Starbucks.Api\bin\Debug\net9.0\Resources\
 C:\Users\franc\Escritorio\Programs\src\Starbucks.Api\bin\Debug\net9.0\Scrutor.dll
 C:\Users\franc\Escritorio\Programs\src\Starbucks.Api\bin\Debug\net9.0\Core.mediatOR.dll
 C:\Users\franc\Escritorio\Programs\src\Starbucks.Api\bin\Debug\net9.0\Core.mediatOR.pdb
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Api\bin\Debug\net9.0\Core.Mappy.dll
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Api\bin\Debug\net9.0\Core.Mappy.pdb
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Api\bin\Debug\net9.0\FluentValidation.dll
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Api\bin\Debug\net9.0\FluentValidation.DependencyInjectionExtensions.dll

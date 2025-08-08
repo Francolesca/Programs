@@ -1,4 +1,3 @@
-using System;
 using Core.mediatOR.Contracts;
 using Microsoft.Extensions.DependencyInjection;
 
