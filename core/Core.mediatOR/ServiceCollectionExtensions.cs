@@ -21,6 +21,14 @@ public static class ServiceCollectionExtensions
             .AsImplementedInterfaces()
             .WithTransientLifetime()
         );
+
+        services.Scan(scan => scan
+            .FromAssemblies(assemblies)
+            .AddClasses(c => c.AssignableTo(typeof(IPipelineBehavior<,>)))
+            .AsImplementedInterfaces()
+            .WithTransientLifetime()
+        );
+        
         return services;
     }
 }
