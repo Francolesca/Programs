@@ -9,10 +9,10 @@ Accept: application/json
 Content-Type: application/json
 
 {
-    "name": "Cafe Argentino",
-    "description": "Cafe dulce",
-    "price": 50,
-    "categoryId" : 1,
+    "name": "",
+    "description": "",
+    "price": 0,
+    "categoryId" : 2,
     "imagen": ""
 }
 ###

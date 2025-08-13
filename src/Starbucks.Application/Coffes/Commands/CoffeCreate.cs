@@ -33,19 +33,16 @@ public class CoffeCreate
     }
     public class Handler(
         StarbucksDbContext context,
-        IMapper mapper,
-        IValidator<Command> validator) : IRequestHandler<Command, Guid>
+        IMapper mapper)
+        : IRequestHandler<Command, Guid>
     {
         private readonly StarbucksDbContext _context = context;
         private readonly IMapper _mapper = mapper;
-        private readonly IValidator<Command> _validator = validator;
         public async Task<Guid> Handle(
             Command request,
             CancellationToken cancellationToken
             )
-        {
-            await _validator.ValidateAndThrowAsync(request, cancellationToken);
-            
+        {            
             var coffe = _mapper.Map<Domain.Coffe>(request.CoffeCreateRequest);
             _context.Add(coffe);
             await _context.SaveChangesAsync(cancellationToken);

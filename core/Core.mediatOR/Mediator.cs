@@ -33,6 +33,25 @@ public class Mediator : IMediator
             throw new InvalidOperationException(
                 $"Handler for Request type {request.GetType().Name} not found");
         }
-        return await handler.Handle((dynamic)request, cancellationToken);
+
+        var behaviorType = typeof(IPipelineBehavior<,>)
+                            .MakeGenericType(request.GetType(), typeof(TResponse));
+
+        var behaviors = _serviceProvider.GetServices(behaviorType)
+                            .Cast<dynamic>()
+                            .Reverse().ToList();
+        RequestHandlerDelegate<TResponse> handlerDelegate =
+                    () => handler.Handle((dynamic)request, cancellationToken);
+
+
+        foreach (var behavior in behaviors)
+        {
+            var next = handlerDelegate;
+            handlerDelegate =
+                () => behavior.Handle((dynamic)request, cancellationToken, next);
+        }
+
+        return await handlerDelegate();
+        //return await handler.Handle((dynamic)request, cancellationToken);
     }
 }
