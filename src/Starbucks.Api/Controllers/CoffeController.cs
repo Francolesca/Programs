@@ -6,23 +6,23 @@ using Starbucks.Application.Coffes.DTOs;
 
 namespace Starbucks.Api.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/coffes")]
     [ApiController]
     public class CoffeController(IMediator mediator) : ControllerBase
     {
         private readonly IMediator _mediator = mediator;
 
         [HttpPost]
-        public async Task<Guid> CreateCoffe(
+        public async Task<IActionResult> CreateCoffe(
             CoffeCreateRequest req,
             CancellationToken cancellationToken)
         {
-            var res = await _mediator.Send(
+            var coffeId = await _mediator.Send(
                 new CoffeCreate.Command { CoffeCreateRequest = req },
                 cancellationToken
                 );
 
-            return res;
+            return Created($"api/coffes/{coffeId}",coffeId);//CODE 201
         }
 
     }
