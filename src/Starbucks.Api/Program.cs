@@ -6,6 +6,7 @@ using Core.Mappy.Extensions;
 using Core.Mappy;
 using Starbucks.Domain;
 using Starbucks.Application.Categories.DTOs;
+using Starbucks.Api.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 var environment = builder.Environment;
@@ -25,5 +26,5 @@ mapper.RegisterMappings(typeof(CategoryMappingProfile).Assembly);
 await app.ApplyMigration(environment);
 
 app.MapControllers();
-
+app.UseMiddleware<ExceptionHandlingMidlleware>();
 app.Run();
