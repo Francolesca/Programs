@@ -1,5 +1,6 @@
 using System;
 using Starbucks.Application.Abstractions;
+using Starbucks.Domain.Abstractions;
 
 namespace Starbucks.Api.Middleware;
 

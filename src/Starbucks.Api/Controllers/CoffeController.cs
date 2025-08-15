@@ -1,6 +1,7 @@
 using Core.mediatOR.Contracts;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Starbucks.Application.Abstractions;
 using Starbucks.Application.Coffes.Commands;
 using Starbucks.Application.Coffes.DTOs;
 
@@ -17,12 +18,17 @@ namespace Starbucks.Api.Controllers
             CoffeCreateRequest req,
             CancellationToken cancellationToken)
         {
-            var coffeId = await _mediator.Send(
+            var result = await _mediator.Send(
                 new CoffeCreate.Command { CoffeCreateRequest = req },
                 cancellationToken
                 );
+            if (result.IsSucces)
+            {
+                var coffeId = result.Value;
+                return Created($"api/coffes/{coffeId}", coffeId);
+            }
 
-            return Created($"api/coffes/{coffeId}",coffeId);//CODE 201
+            return BadRequest(result.Errors);
         }
 
     }

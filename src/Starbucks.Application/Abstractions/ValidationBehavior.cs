@@ -1,5 +1,4 @@
-using System;
-using System.ComponentModel.DataAnnotations;
+using System.Reflection;
 using Core.mediatOR.Contracts;
 using FluentValidation;
 using FluentValidation.Results;
@@ -23,28 +22,47 @@ where TRequest : IRequest<TResponse>
         CancellationToken cancellationToken,
         RequestHandlerDelegate<TResponse> next)
     {
-        if (!_validators.Any())
+if (_validators.Any())
         {
-            return await next();
-        }
+            var context = new ValidationContext<TRequest>(request);
+            var results = await Task.WhenAll(
+                _validators
+                .Select(v => v.ValidateAsync(context, cancellationToken))
+            );
 
-        var context = new ValidationContext<TRequest>(request);
+            var failures = results.SelectMany(r => r.Errors)
+            .Where(f => f != null).ToList();
 
-        var validationErrors = _validators
-            .Select(validators => validators.Validate(context))
-            .Where(validationResult => validationResult.Errors.Any())
-            .SelectMany(validationResult => validationResult.Errors)
-            .Select(validationFailure => new ValidationError(
-                validationFailure.PropertyName,
-                validationFailure.ErrorMessage
-            )).ToList();
+            if (failures.Count != 0)
+            {
+                var resultType = typeof(TResponse);
+                if (resultType.IsGenericType
+                    && resultType.GetGenericTypeDefinition() == typeof(Result<>))
+                {
+                    var validationFailureMethod = resultType
+                                    .GetMethod(
+                                        "ValidationFailure",
+                                        BindingFlags.Public |
+                                        BindingFlags.Static
+                                    );
 
-        if (validationErrors.Any())
-        {
-            throw new Exceptions.ValidationException(validationErrors);
+
+                    if (validationFailureMethod is not null)
+                    {
+                        return (TResponse)validationFailureMethod
+                        .Invoke(null, new object[] { failures })!;
+                    }
+                }
+
+                throw new InvalidOperationException(
+                "El TResponse debe ser Result<T> para usar ValidationBehavior"
+                );
+
+            }
+
         }
 
         return await next();
-
+       
     }
 }

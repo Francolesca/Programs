@@ -1,8 +1,12 @@
 C:\Users\franc\Escritorio\Programs\src\Starbucks.Application\bin\Debug\net9.0\Starbucks.Application.deps.json
 C:\Users\franc\Escritorio\Programs\src\Starbucks.Application\bin\Debug\net9.0\Starbucks.Application.dll
 C:\Users\franc\Escritorio\Programs\src\Starbucks.Application\bin\Debug\net9.0\Starbucks.Application.pdb
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Application\bin\Debug\net9.0\Core.Mappy.dll
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Application\bin\Debug\net9.0\Core.mediatOR.dll
 C:\Users\franc\Escritorio\Programs\src\Starbucks.Application\bin\Debug\net9.0\Starbucks.Domain.dll
 C:\Users\franc\Escritorio\Programs\src\Starbucks.Application\bin\Debug\net9.0\Starbucks.Persistence.dll
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Application\bin\Debug\net9.0\Core.Mappy.pdb
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Application\bin\Debug\net9.0\Core.mediatOR.pdb
 C:\Users\franc\Escritorio\Programs\src\Starbucks.Application\bin\Debug\net9.0\Starbucks.Persistence.pdb
 C:\Users\franc\Escritorio\Programs\src\Starbucks.Application\bin\Debug\net9.0\Starbucks.Domain.pdb
 C:\Users\franc\Escritorio\Programs\src\Starbucks.Application\obj\Debug\net9.0\Starbucks.Application.csproj.AssemblyReference.cache
@@ -16,7 +20,3 @@ C:\Users\franc\Escritorio\Programs\src\Starbucks.Application\obj\Debug\net9.0\St
 C:\Users\franc\Escritorio\Programs\src\Starbucks.Application\obj\Debug\net9.0\refint\Starbucks.Application.dll
 C:\Users\franc\Escritorio\Programs\src\Starbucks.Application\obj\Debug\net9.0\Starbucks.Application.pdb
 C:\Users\franc\Escritorio\Programs\src\Starbucks.Application\obj\Debug\net9.0\ref\Starbucks.Application.dll
-C:\Users\franc\Escritorio\Programs\src\Starbucks.Application\bin\Debug\net9.0\Core.mediatOR.dll
-C:\Users\franc\Escritorio\Programs\src\Starbucks.Application\bin\Debug\net9.0\Core.mediatOR.pdb
-C:\Users\franc\Escritorio\Programs\src\Starbucks.Application\bin\Debug\net9.0\Core.Mappy.dll
-C:\Users\franc\Escritorio\Programs\src\Starbucks.Application\bin\Debug\net9.0\Core.Mappy.pdb

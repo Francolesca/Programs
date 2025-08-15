@@ -1,10 +1,12 @@
-using System;
+using FluentValidation.Results;
+using Starbucks.Domain.Abstractions;
 
 namespace Starbucks.Application.Abstractions;
 
 public class Result<T> : ResultGlobal
 {
     public T? Value { get; init; }
+    private Result(){}
     public static Result<T> Succes(T value) => new Result<T>
     {
         IsSucces = true,
@@ -15,6 +17,12 @@ public class Result<T> : ResultGlobal
         IsSucces = false,
         Errors = errors.ToList()
     };
+    public static Result<T> ValidationFailure(
+        IEnumerable<ValidationFailure> failures)
+        => Failure(
+            failures
+                .Select(f => new Error(f.PropertyName, f.ErrorMessage)).ToArray()
+        );
 
 }
 public class Result :ResultGlobal
@@ -33,7 +41,7 @@ public class Result :ResultGlobal
 public abstract class ResultGlobal
 {
     public bool IsSucces { get; init; }
-    public bool IsFailure { get; init; }
+    public bool IsFailure => !IsSucces;
     public List<Error> Errors { get; init; } = new();
     protected ResultGlobal() { }
 }

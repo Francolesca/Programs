@@ -1,4 +1,5 @@
 using System;
+using Starbucks.Domain.Abstractions;
 
 namespace Starbucks.Domain;
 
@@ -12,4 +13,12 @@ public class Coffe : BaseEntity
     public Category? Category { get; set; }
     public ICollection<Ingredient> Ingredients { get; set; } = [];
     public ICollection<CoffeIngredient> CoffeIngredients { get; set; } = [];
+}
+public static class CoffeErrors
+{
+    public static Error NameDuplicate = new Error
+    (
+        "COFFE.NAME_DUPLICATE",
+        "That Coffe already exists in the system."
+    );
 }

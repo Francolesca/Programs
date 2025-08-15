@@ -9,9 +9,9 @@ Accept: application/json
 Content-Type: application/json
 
 {
-    "name": "",
-    "description": "",
-    "price": 0,
+    "name": "cafe",
+    "description": "cafe description",
+    "price": 50,
     "categoryId" : 2,
     "imagen": ""
 }
