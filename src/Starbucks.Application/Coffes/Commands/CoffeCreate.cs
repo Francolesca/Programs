@@ -64,7 +64,7 @@ public class CoffeCreate
             var coffe = _mapper.Map<Domain.Coffe>(request.CoffeCreateRequest);
             _context.Add(coffe);
             await _context.SaveChangesAsync(cancellationToken);
-            return Result<Guid>.Succes(coffe.Id);
+            return Result<Guid>.Success(coffe.Id);
         }
     }
 }

@@ -16,7 +16,7 @@ public class CategoryController(IMediator mediator) : ControllerBase
     {
         var query = new Query();
         var res = await _mediator.Send(query, cancellationToken);
-        return Ok(res);
+        return Ok(res.Value);
     }
     
 }   

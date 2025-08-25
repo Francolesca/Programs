@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Starbucks.Persistence;
 
 #nullable disable
@@ -15,24 +16,34 @@ namespace Starbucks.Persistence.Migrations
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "9.0.7");
+            modelBuilder
+                .HasAnnotation("ProductVersion", "9.0.7")
+                .HasAnnotation("Relational:MaxIdentifierLength", 63);
+
+            NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
             modelBuilder.Entity("Starbucks.Domain.Category", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("integer")
+                        .HasColumnName("id");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Description")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("text")
+                        .HasColumnName("description");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("text")
+                        .HasColumnName("name");
 
-                    b.HasKey("Id");
+                    b.HasKey("Id")
+                        .HasName("pk_categories");
 
-                    b.ToTable("Categories");
+                    b.ToTable("categories", (string)null);
 
                     b.HasData(
                         new
@@ -51,60 +62,75 @@ namespace Starbucks.Persistence.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("uuid")
+                        .HasColumnName("id");
 
                     b.Property<int>("CategoryId")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("integer")
+                        .HasColumnName("category_id");
 
                     b.Property<string>("Description")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("text")
+                        .HasColumnName("description");
 
                     b.Property<string>("Imagen")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("text")
+                        .HasColumnName("imagen");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("text")
+                        .HasColumnName("name");
 
                     b.Property<decimal>("Price")
                         .HasPrecision(10, 2)
-                        .HasColumnType("TEXT");
+                        .HasColumnType("numeric(10,2)")
+                        .HasColumnName("price");
 
-                    b.HasKey("Id");
+                    b.HasKey("Id")
+                        .HasName("pk_coffes");
 
-                    b.HasIndex("CategoryId");
+                    b.HasIndex("CategoryId")
+                        .HasDatabaseName("ix_coffes_category_id");
 
-                    b.ToTable("Coffes");
+                    b.ToTable("coffes", (string)null);
                 });
 
             modelBuilder.Entity("Starbucks.Domain.CoffeIngredient", b =>
                 {
                     b.Property<Guid>("CoffeId")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("uuid")
+                        .HasColumnName("coffe_id");
 
                     b.Property<Guid>("IngredientId")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("uuid")
+                        .HasColumnName("ingredient_id");
 
-                    b.HasKey("CoffeId", "IngredientId");
+                    b.HasKey("CoffeId", "IngredientId")
+                        .HasName("pk_coffe_ingredient");
 
-                    b.HasIndex("IngredientId");
+                    b.HasIndex("IngredientId")
+                        .HasDatabaseName("ix_coffe_ingredient_ingredient_id");
 
-                    b.ToTable("CoffeIngredient");
+                    b.ToTable("coffe_ingredient", (string)null);
                 });
 
             modelBuilder.Entity("Starbucks.Domain.Ingredient", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("uuid")
+                        .HasColumnName("id");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("text")
+                        .HasColumnName("name");
 
-                    b.HasKey("Id");
+                    b.HasKey("Id")
+                        .HasName("pk_ingredients");
 
-                    b.ToTable("Ingredients");
+                    b.ToTable("ingredients", (string)null);
                 });
 
             modelBuilder.Entity("Starbucks.Domain.Coffe", b =>
@@ -113,7 +139,8 @@ namespace Starbucks.Persistence.Migrations
                         .WithMany("Coffes")
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .IsRequired()
+                        .HasConstraintName("fk_coffes_categories_category_id");
 
                     b.Navigation("Category");
                 });
@@ -124,13 +151,15 @@ namespace Starbucks.Persistence.Migrations
                         .WithMany("CoffeIngredients")
                         .HasForeignKey("CoffeId")
                         .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .IsRequired()
+                        .HasConstraintName("fk_coffe_ingredient_coffes_coffe_id");
 
                     b.HasOne("Starbucks.Domain.Ingredient", "Ingredient")
                         .WithMany("CoffeIngredients")
                         .HasForeignKey("IngredientId")
                         .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .IsRequired()
+                        .HasConstraintName("fk_coffe_ingredient_ingredients_ingredient_id");
 
                     b.Navigation("Coffe");
 

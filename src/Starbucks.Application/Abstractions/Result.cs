@@ -7,7 +7,7 @@ public class Result<T> : ResultGlobal
 {
     public T? Value { get; init; }
     private Result(){}
-    public static Result<T> Succes(T value) => new Result<T>
+    public static Result<T> Success(T value) => new Result<T>
     {
         IsSucces = true,
         Value = value
@@ -27,7 +27,7 @@ public class Result<T> : ResultGlobal
 }
 public class Result :ResultGlobal
 {
-    public static Result Succes() => new Result
+    public static Result Success() => new Result
     {
         IsSucces = true,
     };

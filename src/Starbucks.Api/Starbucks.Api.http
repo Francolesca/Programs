@@ -9,10 +9,35 @@ Accept: application/json
 Content-Type: application/json
 
 {
-    "name": "cafe",
+    "name": "cafetes",
     "description": "cafe description",
     "price": 50,
     "categoryId" : 2,
     "imagen": ""
 }
+###
+PUT  {{ Starbucks.Api_HostAddress}}/api/coffes/0198c44c-25d0-7579-b938-7fce58aa87c7
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "cafeActual",
+    "description": "cafe description",
+    "price": 50,
+    "categoryId" : 2,
+    "imagen": ""
+}
+###
+
+Get {{ Starbucks.Api_HostAddress }}/api/coffes/0198c44c-25d0-7579-b938-7fce58aa87c7
+Accept: application/json
+
+###
+DELETE  {{ Starbucks.Api_HostAddress }}/api/coffes/0198c44c-25d0-7579-b938-7fce58aa87c7
+Accept: application/json
+
+###
+Get {{ Starbucks.Api_HostAddress }}/api/coffes
+Accept: application/json
+
 ###

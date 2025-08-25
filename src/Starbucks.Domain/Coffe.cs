@@ -21,4 +21,9 @@ public static class CoffeErrors
         "COFFE.NAME_DUPLICATE",
         "That Coffe already exists in the system."
     );
+        public static Error CoffeNoExist = new Error
+    (
+        "COFFE.COFFE_NOT_EXIST",
+        "That Coffe does not exist in the system."
+    );
 }

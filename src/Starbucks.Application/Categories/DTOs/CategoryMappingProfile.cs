@@ -11,7 +11,7 @@ public class CategoryMappingProfile : IMappingProfile
         mapper.CreateMap<Category, CategoryDTO>(
             cfg => {
                 cfg.Map(dest => dest.CategoryId, src => src.Id);
-                cfg.Map(dest => dest.NameTest, src => src.Name);
+                cfg.Map(dest => dest.Name, src => src.Name);
             }
         );
     }

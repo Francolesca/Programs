@@ -5,3 +5,6 @@ dotnet new classlib -o core/Core.mediatOR // Crear proyecto de Mediator
 dotnet sln add core/Core.mediatOR // Agregar proyecto a la solución
 $ dotnet add package Scrutor --version 6.0.1
 $ dotnet new classlib -o core/Core.Mappy // crear proyecto mapping 
+$ dotnet add package Npgsql.EntityFrameworkCore.PortgreSQL --version 9.0.4 // 
+$ dotnet tool install --global dotnet-ef
+$ dotnet ef migrations add InitialMigrationPostgres --project src/Starbucks.Persistence --output-dir Migrations -s src/Starbucks.Api --verbose
