@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "ACh4T3BMQGCHfdqCg/g4fWN5TUX9ALWoi9qx4eyFG1c=",
+  "Source": "Starbucks.Api",
+  "BasePath": "_content/Starbucks.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

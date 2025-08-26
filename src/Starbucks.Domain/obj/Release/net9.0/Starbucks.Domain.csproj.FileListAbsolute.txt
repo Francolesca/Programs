@@ -1,0 +1,12 @@
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Domain\bin\Release\net9.0\Starbucks.Domain.deps.json
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Domain\bin\Release\net9.0\Starbucks.Domain.dll
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Domain\bin\Release\net9.0\Starbucks.Domain.pdb
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Domain\obj\Release\net9.0\Starbucks.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Domain\obj\Release\net9.0\Starbucks.Domain.AssemblyInfoInputs.cache
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Domain\obj\Release\net9.0\Starbucks.Domain.AssemblyInfo.cs
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Domain\obj\Release\net9.0\Starbucks.Domain.csproj.CoreCompileInputs.cache
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Domain\obj\Release\net9.0\Starbucks.Domain.sourcelink.json
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Domain\obj\Release\net9.0\Starbucks.Domain.dll
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Domain\obj\Release\net9.0\refint\Starbucks.Domain.dll
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Domain\obj\Release\net9.0\Starbucks.Domain.pdb
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Domain\obj\Release\net9.0\ref\Starbucks.Domain.dll

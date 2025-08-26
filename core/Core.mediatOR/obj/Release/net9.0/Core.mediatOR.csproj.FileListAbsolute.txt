@@ -1,0 +1,13 @@
+C:\Users\franc\Escritorio\Programs\core\Core.mediatOR\bin\Release\net9.0\Core.mediatOR.deps.json
+C:\Users\franc\Escritorio\Programs\core\Core.mediatOR\bin\Release\net9.0\Core.mediatOR.dll
+C:\Users\franc\Escritorio\Programs\core\Core.mediatOR\bin\Release\net9.0\Core.mediatOR.pdb
+C:\Users\franc\Escritorio\Programs\core\Core.mediatOR\obj\Release\net9.0\Core.mediatOR.csproj.AssemblyReference.cache
+C:\Users\franc\Escritorio\Programs\core\Core.mediatOR\obj\Release\net9.0\Core.mediatOR.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\franc\Escritorio\Programs\core\Core.mediatOR\obj\Release\net9.0\Core.mediatOR.AssemblyInfoInputs.cache
+C:\Users\franc\Escritorio\Programs\core\Core.mediatOR\obj\Release\net9.0\Core.mediatOR.AssemblyInfo.cs
+C:\Users\franc\Escritorio\Programs\core\Core.mediatOR\obj\Release\net9.0\Core.mediatOR.csproj.CoreCompileInputs.cache
+C:\Users\franc\Escritorio\Programs\core\Core.mediatOR\obj\Release\net9.0\Core.mediatOR.sourcelink.json
+C:\Users\franc\Escritorio\Programs\core\Core.mediatOR\obj\Release\net9.0\Core.mediatOR.dll
+C:\Users\franc\Escritorio\Programs\core\Core.mediatOR\obj\Release\net9.0\refint\Core.mediatOR.dll
+C:\Users\franc\Escritorio\Programs\core\Core.mediatOR\obj\Release\net9.0\Core.mediatOR.pdb
+C:\Users\franc\Escritorio\Programs\core\Core.mediatOR\obj\Release\net9.0\ref\Core.mediatOR.dll

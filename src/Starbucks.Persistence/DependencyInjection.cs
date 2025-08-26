@@ -15,7 +15,12 @@ public static class DependencyInjection
         services.AddDbContext<StarbucksDbContext>(opt =>
         {
             //opt.UseSqlite(configuration.GetConnectionString("SqlLiteDatabase"));
-            opt.UseNpgsql(configuration.GetConnectionString("PostgresDatabase"))
+            //opt.UseNpgsql(configuration.GetConnectionString("PostgresDatabase"))
+            //    .UseSnakeCaseNamingConvention();
+            opt.UseSqlServer(
+                configuration.GetConnectionString("SqlAzureDatabase"),
+                sqlOptions => sqlOptions.EnableRetryOnFailure()
+                )
                 .UseSnakeCaseNamingConvention();
 
         });

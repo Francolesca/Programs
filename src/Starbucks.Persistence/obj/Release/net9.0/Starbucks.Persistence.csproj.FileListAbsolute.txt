@@ -1,0 +1,16 @@
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Persistence\bin\Release\net9.0\Starbucks.Persistence.deps.json
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Persistence\bin\Release\net9.0\Starbucks.Persistence.dll
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Persistence\bin\Release\net9.0\Starbucks.Persistence.pdb
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Persistence\bin\Release\net9.0\Starbucks.Domain.dll
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Persistence\bin\Release\net9.0\Starbucks.Domain.pdb
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Persistence\obj\Release\net9.0\Starbucks.Persistence.csproj.AssemblyReference.cache
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Persistence\obj\Release\net9.0\Starbucks.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Persistence\obj\Release\net9.0\Starbucks.Persistence.AssemblyInfoInputs.cache
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Persistence\obj\Release\net9.0\Starbucks.Persistence.AssemblyInfo.cs
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Persistence\obj\Release\net9.0\Starbucks.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Persistence\obj\Release\net9.0\Starbucks.Persistence.sourcelink.json
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Persistence\obj\Release\net9.0\Starbuck.5D841616.Up2Date
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Persistence\obj\Release\net9.0\Starbucks.Persistence.dll
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Persistence\obj\Release\net9.0\refint\Starbucks.Persistence.dll
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Persistence\obj\Release\net9.0\Starbucks.Persistence.pdb
+C:\Users\franc\Escritorio\Programs\src\Starbucks.Persistence\obj\Release\net9.0\ref\Starbucks.Persistence.dll

@@ -1,0 +1,91 @@
+[
+  {
+    "ContainingType": "Starbucks.Api.Controllers.CategoryController",
+    "Method": "Get",
+    "RelativePath": "api/categories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Starbucks.Api.Controllers.CoffeController",
+    "Method": "CreateCoffe",
+    "RelativePath": "api/coffes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "Starbucks.Application.Coffes.DTOs.CoffeCreateRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Starbucks.Api.Controllers.CoffeController",
+    "Method": "Get",
+    "RelativePath": "api/coffes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Starbucks.Api.Controllers.CoffeController",
+    "Method": "UpdateCoffe",
+    "RelativePath": "api/coffes/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "req",
+        "Type": "Starbucks.Application.Coffes.DTOs.CoffeUpdateRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Starbucks.Api.Controllers.CoffeController",
+    "Method": "GetDetails",
+    "RelativePath": "api/coffes/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Starbucks.Api.Controllers.CoffeController",
+    "Method": "DeleteCoffe",
+    "RelativePath": "api/coffes/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

@@ -15,6 +15,7 @@ var environment = builder.Environment;
 builder.Services.AddControllers();
 builder.Services.AddPersistence(builder.Configuration);
 builder.Services.AddApplication();
+builder.Services.AddOpenApi();
 builder.Services.AddSingleton<IMapper, Mapper>();
 
 
@@ -26,5 +27,12 @@ mapper.RegisterMappings(typeof(CategoryMappingProfile).Assembly);
 await app.ApplyMigration(environment);
 
 app.MapControllers();
+app.MapOpenApi();
+
+app.UseSwaggerUI(option =>
+{
+    option.SwaggerEndpoint("/openapi/v1.json", "Documentacion de Starbucks");
+});
+
 app.UseMiddleware<ExceptionHandlingMidlleware>();
 app.Run();
