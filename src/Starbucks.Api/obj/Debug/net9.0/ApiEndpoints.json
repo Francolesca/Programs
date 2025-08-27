@@ -87,5 +87,41 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Starbucks.Api.Controllers.FlavorController",
+    "Method": "Get",
+    "RelativePath": "api/flavors",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Starbucks.Api.Controllers.FlavorController",
+    "Method": "Put",
+    "RelativePath": "api/flavors/{id}/images",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ImageFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

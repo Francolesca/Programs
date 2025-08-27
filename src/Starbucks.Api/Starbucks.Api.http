@@ -41,3 +41,11 @@ Get {{ Starbucks.Api_HostAddress }}/api/coffes
 Accept: application/json
 
 ###
+GET https://appdevwestarbuck.table.core.windows.net/CoffeCategorie?sp=r&st=2025-08-27T14:13:04Z&se=2025-08-27T22:28:04Z&spr=https&sv=2024-11-04&sig=%2B4FTtjK1o0ruRU1fjWhBMv4ybCU315YEiePeu2rWPY4%3D&tn=CoffeCategorie
+Accept: application/json
+
+###
+GET https://appdevwestarbuck.table.core.windows.net/CoffeCategorie?$filter=(Id%20eq%202)&sp=r&st=2025-08-27T14:13:04Z&se=2025-08-27T22:28:04Z&spr=https&sv=2024-11-04&sig=%2B4FTtjK1o0ruRU1fjWhBMv4ybCU315YEiePeu2rWPY4%3D&tn=CoffeCategorie
+Accept: application/json
+
+###

@@ -1,12 +1,88 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\franc\\Escritorio\\Programs\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8CE79D16-703D-44C6-9906-6F0D6EA2D333}|src\\Starbucks.Application\\Starbucks.Application.csproj|c:\\users\\franc\\escritorio\\programs\\src\\starbucks.application\\flavours\\commands\\flavorimageupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CE79D16-703D-44C6-9906-6F0D6EA2D333}|src\\Starbucks.Application\\Starbucks.Application.csproj|solutionrelative:src\\starbucks.application\\flavours\\commands\\flavorimageupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1F5298C-FFC7-43BA-A3AA-0138ACD0A0A3}|src\\Starbucks.Api\\Starbucks.Api.csproj|c:\\users\\franc\\escritorio\\programs\\src\\starbucks.api\\controllers\\flavorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1F5298C-FFC7-43BA-A3AA-0138ACD0A0A3}|src\\Starbucks.Api\\Starbucks.Api.csproj|solutionrelative:src\\starbucks.api\\controllers\\flavorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CE79D16-703D-44C6-9906-6F0D6EA2D333}|src\\Starbucks.Application\\Starbucks.Application.csproj|c:\\users\\franc\\escritorio\\programs\\src\\starbucks.application\\flavours\\queries\\flavorget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CE79D16-703D-44C6-9906-6F0D6EA2D333}|src\\Starbucks.Application\\Starbucks.Application.csproj|solutionrelative:src\\starbucks.application\\flavours\\queries\\flavorget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CE79D16-703D-44C6-9906-6F0D6EA2D333}|src\\Starbucks.Application\\Starbucks.Application.csproj|c:\\users\\franc\\escritorio\\programs\\src\\starbucks.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CE79D16-703D-44C6-9906-6F0D6EA2D333}|src\\Starbucks.Application\\Starbucks.Application.csproj|solutionrelative:src\\starbucks.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FlavorController.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\Escritorio\\Programs\\src\\Starbucks.Api\\Controllers\\FlavorController.cs",
+              "RelativeDocumentMoniker": "src\\Starbucks.Api\\Controllers\\FlavorController.cs",
+              "ToolTip": "C:\\Users\\franc\\Escritorio\\Programs\\src\\Starbucks.Api\\Controllers\\FlavorController.cs",
+              "RelativeToolTip": "src\\Starbucks.Api\\Controllers\\FlavorController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAcwCQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T18:48:26.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FlavorImageUpdate.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\Escritorio\\Programs\\src\\Starbucks.Application\\Flavours\\Commands\\FlavorImageUpdate.cs",
+              "RelativeDocumentMoniker": "src\\Starbucks.Application\\Flavours\\Commands\\FlavorImageUpdate.cs",
+              "ToolTip": "C:\\Users\\franc\\Escritorio\\Programs\\src\\Starbucks.Application\\Flavours\\Commands\\FlavorImageUpdate.cs",
+              "RelativeToolTip": "src\\Starbucks.Application\\Flavours\\Commands\\FlavorImageUpdate.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAUwCkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T18:30:23.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FlavorGet.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\Escritorio\\Programs\\src\\Starbucks.Application\\Flavours\\Queries\\FlavorGet.cs",
+              "RelativeDocumentMoniker": "src\\Starbucks.Application\\Flavours\\Queries\\FlavorGet.cs",
+              "ToolTip": "C:\\Users\\franc\\Escritorio\\Programs\\src\\Starbucks.Application\\Flavours\\Queries\\FlavorGet.cs",
+              "RelativeToolTip": "src\\Starbucks.Application\\Flavours\\Queries\\FlavorGet.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAkwD8AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T18:12:49.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\Escritorio\\Programs\\src\\Starbucks.Application\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "src\\Starbucks.Application\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\franc\\Escritorio\\Programs\\src\\Starbucks.Application\\DependencyInjection.cs",
+              "RelativeToolTip": "src\\Starbucks.Application\\DependencyInjection.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T18:11:38.823Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

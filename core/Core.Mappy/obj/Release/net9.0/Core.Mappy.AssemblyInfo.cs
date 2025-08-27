@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Core.Mappy")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36e30a1d636afc497efca2360b1d43504388f309")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c44ecd8fc8b24563ebfef10fb18b35139ec36fe5")]
 [assembly: System.Reflection.AssemblyProductAttribute("Core.Mappy")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Core.Mappy")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

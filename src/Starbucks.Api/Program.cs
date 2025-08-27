@@ -14,7 +14,7 @@ var environment = builder.Environment;
 
 builder.Services.AddControllers();
 builder.Services.AddPersistence(builder.Configuration);
-builder.Services.AddApplication();
+builder.Services.AddApplication(builder.Configuration);
 builder.Services.AddOpenApi();
 builder.Services.AddSingleton<IMapper, Mapper>();
 

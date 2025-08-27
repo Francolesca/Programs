@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
-  <parameter name="IIS Web Application Name" description="" value="appdev-app-dev-we-starbuck" tags="IisApp">
+  <parameter name="IIS Web Application Name" description="" value="app-dev-app-dev-we-starbuck" tags="IisApp">
     <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\franc\\Escritorio\\Programs\\src\\Starbucks\.Api\\obj\\Release\\net9\.0\\PubTmp\\Out\\$" />
   </parameter>
 </parameters>
